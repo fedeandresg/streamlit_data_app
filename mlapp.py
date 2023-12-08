@@ -55,8 +55,9 @@ def main():
 		st.subheader("Exploratory Data Analysis")
 
 		data=st.file_uploader("Upload dataset:",type=['csv','xlsx','txt','json'])
-		st.success("Data successfully loaded")
+		
 		if data is not None:
+			st.success("Data successfully loaded")
 			df=pd.read_csv(data)
 			st.dataframe(df.head(50))
 
@@ -80,7 +81,8 @@ def main():
 			if st.checkbox('Display Correlation of data variuos columns'):
 				st.write(df.corr())
 
-
+		else:
+			st.warning("Please upload your dataset")
 
 
 #DEALING WITH THE VISUALIZATION PART
@@ -90,8 +92,9 @@ def main():
 		st.subheader("Data Visualization")
 
 		data=st.file_uploader("Upload dataset:",type=['csv','xlsx','txt','json'])
-		st.success("Data successfully loaded")
+		
 		if data is not None:
+			st.success("Data successfully loaded")
 			df=pd.read_csv(data)
 			st.dataframe(df.head(50))
 
@@ -113,6 +116,8 @@ def main():
 				pieChart=df[pie_columns].value_counts().plot.pie(autopct="%1.1f%%")
 				st.write(pieChart)
 				st.pyplot()
+		else:
+			st.warning("Please upload your dataset")
 
 
 # DEALING WITH THE MODEL BUILDING PART
@@ -121,8 +126,9 @@ def main():
 		st.subheader("Model Building")
 
 		data=st.file_uploader("Upload dataset:",type=['csv','xlsx','txt','json'])
-		st.success("Data successfully loaded")
+		
 		if data is not None:
+			st.success("Data successfully loaded")
 			df=pd.read_csv(data)
 			st.dataframe(df.head(50))
 
@@ -192,6 +198,8 @@ def main():
 			st.write('Name of classifier:',classifier_name)
 			st.write('Accuracy',accuracy)
 
+		else:
+			st.warning("Please upload your dataset")
 
 
 	#	st.balloons() # If you want some...
