@@ -45,7 +45,7 @@ def main():
 
 	if option=='About':
 
-		st.markdown('This is an interactive web page for an ML project. The analysis in here is to demonstrate how we can present our work to stakeholders in an interractive way by building a web app for our machine learning algorithms using different datasets.'
+		st.markdown('This is an interactive web page for an ML project. The analysis in here is to demonstrate how we can present our work to stakeholders in an interactive way by building a web app for our machine learning algorithms using different datasets.'
 			)
 
 #DEALING WITH THE EDA PART
