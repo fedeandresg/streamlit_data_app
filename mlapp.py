@@ -25,7 +25,7 @@ st.image(image,use_column_width=True)
 # Set subtitle
 
 st.write("""
-    ## Improve your presentations to shareholders
+    ## Improve your presentations to stakeholders
     """)
 
 st.write("""
