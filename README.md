@@ -6,7 +6,7 @@
 
 Have you ever encountered difficulties in making a good presentation? Python notebooks are not clear enough for a presentation?
 
-In this project I developed a template for future presentations to stakeholders using **`Streamlit`**
+In this project I developed a `template` for future presentations to stakeholders using **`Streamlit`**
 
 The main goal is to improve your next presentations!
 
