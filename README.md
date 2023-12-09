@@ -1,10 +1,14 @@
 ![Logo](https://github.com/fedeandresg/streamlit_data_app/blob/main/banner%20data%20science.png?raw=true)
 
-# DATA SCIENCE - Deploying a Streamlit ML App
+# DATA SCIENCE 
+
+# Deploying a Streamlit ML App
 
 Have you ever encountered difficulties in making a good presentation? Python notebooks are not clear enough for a presentation?
 
 In this project I developed a template for future presentations to stakeholders using **`Streamlit`**
+
+The main goal is to improve your next presentations!
 
 ## Context
 
@@ -17,25 +21,17 @@ As a solution, it is possible to deploy an app using python code in which it is 
 
 ## Dataset
 
-We will use yahoo finance as a data source.
+As an example for the user and the demonstration we will use the dataset shown below.
 
-[Link](https://finance.yahoo.com/)
+It is important to note that the user can use his own dataset and import it in any format (CSV, XLSX, TXT, JSON).
 
-## Data analysis
+[Dataset](https://github.com/fedeandresg/streamlit_data_app/blob/main/Bank_Personal_Loan_Modelling.csv)
 
-An analysis of the attributes is carried out for each of the stocks. 
+## Deployment
 
-In particular, 2 stocks were selected to evaluate their historical evolution, difference between opening and closing prices and volume.
+The code developed in the [mlapp.py](https://github.com/fedeandresg/streamlit_data_app/blob/main/mlapp.py) file was developed using `Python` and was deployed using the `Streamlit` service.
 
-[Notebook](https://github.com/fedeandresg/clustering-market-stocks/blob/main/Stock_Market_Clustering.ipynb)
+Below is the link for testing:
 
-## Clustering model - Machine Learning
-
-For the project, the K-means algorithm was used to group the stocks. It was decided to use 6 clusters. 
-
-Values were normalized to improve the consistency of the analysis and the dimensionality reduction technique (PCA) was applied. 
-
-Also a pipeline was defined for the process and finally the structure of the clusters was plotted.
-
-[Notebook](https://github.com/fedeandresg/clustering-market-stocks/blob/main/Stock_Market_Clustering.ipynb)
+[Link deployment](https://improvepresentations.streamlit.app/)
 
